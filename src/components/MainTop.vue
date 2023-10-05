@@ -53,7 +53,8 @@ const searchInputValue = ref('');
 }
 
 .input {
-  width: 354px;
+  max-width: 354px;
+  width: 100%;
 }
 
 .button {

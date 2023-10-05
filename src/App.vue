@@ -21,5 +21,14 @@ import MainPage from './components/MainPage.vue';
   grid-template-areas:
     'sidebar header'
     'sidebar main';
+
+  @media (max-width: 680px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'sidebar'
+      'header'
+      'main';
+  }
 }
 </style>

@@ -31,6 +31,10 @@ const activeItem = ref(1);
   color: #fff;
   height: 100%;
   width: 256px;
+
+  @media (max-width: 680px) {
+    width: 100%;
+  }
 }
 
 .title {
@@ -42,6 +46,15 @@ const activeItem = ref(1);
 
 .list {
   margin-top: 100px;
+  @media (max-width: 680px) {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 }
 
 .list-item {
@@ -55,6 +68,9 @@ const activeItem = ref(1);
 
   &:last-child {
     margin-bottom: 0;
+    @media (max-width: 680px) {
+      margin-bottom: 16px;
+    }
   }
 
   &-active,
@@ -64,6 +80,10 @@ const activeItem = ref(1);
     background-color: rgba(255, 255, 255, 0.2);
     & .list-item-title {
       opacity: 1;
+    }
+    @media (max-width: 680px) {
+      border-left: 2px solid #d90e3200;
+      border-bottom: 2px solid #d90e32;
     }
   }
 

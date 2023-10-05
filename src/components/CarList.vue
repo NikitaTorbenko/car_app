@@ -24,5 +24,9 @@ import { cars } from '../consts';
   grid-template-columns: repeat(auto-fill, minmax(354px, 1fr));
   justify-items: center;
   gap: 30px;
+
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
 }
 </style>

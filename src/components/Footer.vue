@@ -32,6 +32,11 @@
     color: rgba(41, 49, 72, 0.8);
     font-size: 16px;
   }
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .pagination {

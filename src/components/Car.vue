@@ -47,7 +47,8 @@ defineProps({
 <style scoped lang="scss">
 .car {
   height: fit-content;
-  width: 354px;
+  max-width: 354px;
+  width: 100%;
   position: relative;
   border-radius: 10px;
   background-color: #f3f6f8;
