@@ -69,6 +69,7 @@ const searchInputValue = ref('');
   display: flex;
   align-items: center;
   &-text {
+    width: 203px;
     font-size: 16px;
     font-weight: 400;
     margin-right: 16px;

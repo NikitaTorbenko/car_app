@@ -12,7 +12,7 @@ import MainPage from './components/MainPage.vue';
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .root {
   min-height: 100vh;
   display: grid;
