@@ -53,8 +53,11 @@ const searchInputValue = ref('');
 }
 
 .input {
-  max-width: 354px;
-  width: 100%;
+  width: 354px;
+  @media (max-width: 425px) {
+    max-width: 354px;
+    width: 100%;
+  }
 }
 
 .button {
@@ -69,7 +72,6 @@ const searchInputValue = ref('');
   display: flex;
   align-items: center;
   &-text {
-    width: 203px;
     font-size: 16px;
     font-weight: 400;
     margin-right: 16px;
